@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotron 2084 Remake</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="start-screen" class="screen">
+            <h1>ROBOTRON 2084</h1>
+            <p>Save the last human family!</p>
+            <button id="start-button">START GAME</button>
+            <div class="controls">
+                <p>Controls:</p>
+                <p>Movement: WASD or Arrow Keys</p>
+                <p>Shoot: Mouse Movement</p>
+            </div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="game-over" class="screen hidden">
+            <h2>GAME OVER</h2>
+            <p>Level Reached: <span id="final-level">1</span></p>
+            <p>Score: <span id="final-score">0</span></p>
+            <p>High Score: <span id="high-score">0</span></p>
+            <button id="restart-button">PLAY AGAIN</button>
+        </div>
+        <div id="level-up" class="screen hidden">
+            <h2>LEVEL UP!</h2>
+            <p>Level <span id="current-level">1</span></p>
+            <p>Get Ready!</p>
+        </div>
+        <div id="hud">
+            <div id="score">Score: 0</div>
+            <div id="lives">Lives: 3</div>
+            <div id="level">Level: 1</div>
+        </div>
+    </div>
+    <script type="module" src="js/Game.js"></script>
+</body>
+</html>
